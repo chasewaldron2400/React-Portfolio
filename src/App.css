@@ -13,6 +13,10 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .logo {
@@ -22,10 +26,10 @@
   transition: filter 300ms;
 }
 .logo:hover {
-  filter: drop-shadow(0 0 2em red);
+  filter: drop-shadow(0 0 2em blue);
 }
 .logo.react:hover {
-  filter: drop-shadow(red);
+  filter: drop-shadow(blue);
 }
 
 @keyframes logo-spin {
@@ -55,7 +59,7 @@
     max-width: 600px;
     margin: 0;
     padding: 20px;
-    background-color: darkslategray;
+    background-color: #4f81bd;
     border-radius: 8px;
     justify-content: center;
     align-items: center;
@@ -63,15 +67,16 @@
 }
 
 .footer {
-  font-family: ECW;
-  font-size: 12px;
-  color: red;
+  font-family: NWO;
+  font-size: 30px;
+  color: #4f81bd;
   padding-top: 25px;
 }
 
 .nav-item {
   font-family: NWO;
   font-size: 25px;
+  color:blue;
 }
 
 h1 {
@@ -82,4 +87,88 @@ h1 {
 .portfolioName {
   font-family: NWO;
   font-size: 45px;
+  display: inline;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem; 
+}
+
+.about-details {
+  font-size: 30px;
+}
+
+.project {
+  background-color: #1e2a38;
+  border: 2px solid #3a4f73;
+  border-radius: 10px;
+  width: 300px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.project-title {
+  font-family: NWO, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  margin: 1rem 0;
+}
+
+.project-description {
+  color: #ccc;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+a {
+  color: #4f81bd;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #6ba7dc;
+  text-decoration: underline;
+}
+
+button {
+  background-color: #4f81bd;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.self-image {
+  height: 400px;
+  width: 600px;
+}
+
+@media screen and (max-width: 768px) {
+  .project {
+    width: 100%;
+    margin: 1rem 0;
+  }
+
+  .portfolioName {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-title {
+    font-size: 1.2rem;
+  }
+
+  .project-image {
+    max-height: 150px;
+  }
 }

@@ -2,8 +2,8 @@
 const Project = ({ name, description, repoLink, image }) => {
   return (
     <div className="project">
-      <img src={image} alt={name} className="project-image" />
-      <h1 className="project-title">{name}</h1>
+      <img src={image} className="project-image" />
+      <h2 className="project-title">{name}</h2>
       <p className="project-description">{description}</p>
       <a href={repoLink}>GitHub Link</a>
     </div>

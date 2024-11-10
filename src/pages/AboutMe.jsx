@@ -21,6 +21,8 @@ export default function AboutMe() {
         <p>
           Feel free to reach out to me for any collaborations or work oppurtunity!
         </p>
+
+        <img className="self-image" src="src\assets\self.jpg" alt="image" />
       </div>
     </section>
   </div>
