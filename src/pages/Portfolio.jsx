@@ -5,13 +5,13 @@ const projects = [
     name: 'BrainBuster',
     description: 'BrainBuster is a trivia game built using React and mutliple APIs for trivia questions and avatar creation.',
     repoLink: 'https://github.com/chasewaldron2400/Employee-Tracker',
-    image: '/src/assets/brainBuster.jpg',
+    image: '/src/assets/brainBusterSample.jpg',
   },
   {
     name: 'Employee Tracker',
     description: 'A command-line application from scratch to manage a companys employee database, using Node.js, Inquirer, and PostgreSQL',
     repoLink: 'https://github.com/chasewaldron2400/Employee-Tracker',
-    image: '/src/assets/',
+    image: '/src/assets/employeePayrollTracker.jpg',
   },
   {
     name: 'Find Your Fur Baby',
@@ -23,7 +23,7 @@ const projects = [
     name: 'Weather Forecast',
     description: 'This project is a Weather Frorecast application that shows the 5 day forecast using JavaScropt and API calls.',
     repoLink: 'https://github.com/chasewaldron2400/Weather-Forecast',
-    image: '/src/assets/weatherForecast.jpg',
+    image: '/src/assets/weatherForecastScreenshot.jpg',
   },
   {
     name: 'Employee Payroll Tracker',
