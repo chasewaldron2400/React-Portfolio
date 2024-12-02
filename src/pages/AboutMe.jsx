@@ -1,10 +1,6 @@
 export default function AboutMe() {
   return (
     <div className="about-me-container">
-    <header className="about-header">
-      <h1>About Me</h1>
-    </header>
-
     <section className="about-section">
       <div className="about-details">
         <h2>Hello, Im Chase Waldron</h2>

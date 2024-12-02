@@ -21,15 +21,34 @@ const Contact = () => {
   };
 
   return (
-    <form className='emailForm' ref={form} onSubmit={sendEmail}>
-      <label>Name</label>
-      <input type="text" name="name" />
-      <label>Email</label>
-      <input type="email" name="email" />
-      <label>Message</label>
-      <textarea name="message" />
-      <input type="submit" value="Send" />
-    </form>
+    <div className="contact-container">
+      <h2>Contact Me</h2>
+      <form className="emailForm" ref={form} onSubmit={sendEmail}>
+        <div className="form-group">
+          <label htmlFor="name">Name</label>
+          <input type="text" name="name" id="name" required />
+        </div>
+        <div className="form-group">
+          <label htmlFor="email">Email</label>
+          <input type="email" name="email" id="email" required />
+        </div>
+        <div className="form-group">
+          <label htmlFor="message">Message</label>
+          <textarea name="message" id="message" required></textarea>
+        </div>
+        <button type="submit">Send Message</button>
+      </form>
+
+      <div className="social-links">
+        <p>Feel free to connect with me:</p>
+        <a href="github.com/chasewaldron2400" target="_blank" rel="noopener noreferrer" className="social-link">
+          GitHub
+        </a>
+        <a href="linkedin.com/in/chasewaldron2400" target="_blank" rel="noopener noreferrer" className="social-link">
+          LinkedIn
+        </a>
+      </div>
+    </div>
   );
 };
 
