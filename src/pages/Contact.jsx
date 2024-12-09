@@ -41,10 +41,10 @@ const Contact = () => {
 
       <div className="social-links">
         <p>Feel free to connect with me:</p>
-        <a href="github.com/chasewaldron2400" target="_blank" rel="noopener noreferrer" className="social-link">
+        <a href="https://github.com/chasewaldron2400" target="_blank" rel="noopener noreferrer" className="social-link">
           GitHub
         </a>
-        <a href="linkedin.com/in/chasewaldron2400" target="_blank" rel="noopener noreferrer" className="social-link">
+        <a href="https://www.linkedin.com/in/chase-waldron" target="_blank" rel="noopener noreferrer" className="social-link">
           LinkedIn
         </a>
       </div>
