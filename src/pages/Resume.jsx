@@ -1,6 +1,30 @@
+import html2canvas from 'html2canvas';
+
 export default function Resume() {
+  // Function to capture the page and trigger download as JPG
+  const handleDownload = () => {
+    // Select the element to capture (e.g., the entire page)
+    const element = document.getElementById('resume-container');
+
+    if (element) {
+      // Use html2canvas to render the element as a canvas
+      html2canvas(element).then((canvas) => {
+        // Convert the canvas to a data URL (JPG format)
+        const imageUrl = canvas.toDataURL('image/jpeg');
+
+        // Create an anchor element to trigger the download
+        const link = document.createElement('a');
+        link.href = imageUrl;
+        link.download = 'downloaded-page.jpg'; // The name of the image file
+        link.click(); // Programmatically click the link to trigger the download
+      });
+    } else {
+      console.error("Element not found!");
+    }
+  };
+
   return (
-    <div className="resume-container">
+    <div id="resume-container" className="resume-container">
       <header className="resume-header">
         <h1>Chase Waldron</h1>
         <p>Web Developer | JavaScript | React | Full-Stack Developer</p>
@@ -43,6 +67,7 @@ export default function Resume() {
           <h3>Fullstack Coding Certfication</h3>
           <p className="school">Northwestern University | Evanston, Illinois</p>
           <p className="degree-duration">Graduated: November 2024</p>
+          <p className="degree-duration">Grade: 91%</p>
         </div>
       </section>
 
@@ -95,7 +120,11 @@ export default function Resume() {
             </li>
           </ul>
         </div>
+        
+        
       </section>
+
+      <button onClick={handleDownload}>Download Resume as JPG</button>
 
     </div>
   );
