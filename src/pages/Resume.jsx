@@ -32,7 +32,7 @@ export default function Resume() {
           <p>Email: chasew2400@gmail.com</p>
           <p>Phone: (815) 999-7697</p>
           <p>Location: Chicago, Illinois</p>
-          <p>LinkedIn: www.linkedin.com/in/chase-waldron-ab533620a</p>
+          <p>LinkedIn: www.linkedin.com/in/chase-waldron</p>
           <p>GitHub: github.com/chasewaldron2400</p>
         </div>
       </header>
