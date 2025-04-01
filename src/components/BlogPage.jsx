@@ -1,17 +1,24 @@
 import React, { useState } from "react";
-import Post from "../components/Post"; // Post component
+import Post from "../components/Post"; // Import the Post component
 
 const BlogPage = () => {
-  // Sample posts (Replace with real data)
+  // Sample posts with multiple images
   const [posts, setPosts] = useState([
     {
       id: 1,
-      image: "https://via.placeholder.com/600",
-      caption: "This is my first blog post! 🎉",
+      images: [
+        '/assets/static/salmonGravlax.JPEG',
+        '/assets/static/thaiSalad.JPEG',
+        '/assets/static/tunaWonton.JPEG',
+      ],
+      caption: "A glimpse into what im up to most mornings. 🎉",
     },
     {
       id: 2,
-      image: "https://via.placeholder.com/600",
+      images: [
+        "https://via.placeholder.com/600/d32776",
+        "https://via.placeholder.com/600/f66b97",
+      ],
       caption: "Loving this new blogging journey! 🚀",
     },
   ]);
@@ -21,7 +28,7 @@ const BlogPage = () => {
       <h1>My Blog</h1>
       <div className="feed">
         {posts.map((post) => (
-          <Post key={post.id} image={post.image} caption={post.caption} />
+          <Post key={post.id} images={post.images} caption={post.caption} />
         ))}
       </div>
     </div>
