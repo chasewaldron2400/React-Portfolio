@@ -37,6 +37,14 @@ export default function Navigation() {
           Contact
         </Link>
       </li>
+      <li className="nav-item">
+        <Link
+          to="/blog"
+          className={currentPage === '/blog' ? 'nav-link active' : 'nav-link'}
+        >
+          Blog
+        </Link>
+      </li>
     </ul>
   );
 }
