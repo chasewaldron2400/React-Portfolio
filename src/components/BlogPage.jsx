@@ -11,15 +11,18 @@ const BlogPage = () => {
         '/assets/static/thaiSalad.JPEG',
         '/assets/static/tunaWonton.JPEG',
       ],
-      caption: "A glimpse into what im up to most mornings. 🎉",
+      caption: "Chef Chase Creations.",
     },
     {
       id: 2,
       images: [
-        "https://via.placeholder.com/600/d32776",
-        "https://via.placeholder.com/600/f66b97",
+        '/assets/static/miyuYameshitaGCW24.JPEG',
+        '/assets/static/zachWentzGCW24.JPEG',
+        '/assets/static/manceGCW24.JPEG',
+        '/assets/static/redactedRPW24.JPEG',
+        '/assets/static/waldronEmilJay.JPEG',
       ],
-      caption: "Loving this new blogging journey! 🚀",
+      caption: "2024 Wresting Photo Dump",
     },
   ]);
 
