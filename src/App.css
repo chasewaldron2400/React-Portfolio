@@ -374,8 +374,50 @@ button:hover {
 }
 
 .post-image {
-  width: 100%; /* Ensure responsiveness */
-  max-width: 1080px;
-  border-radius: 10px;
+  width: 100%;
+  max-width: 500px; /* good for social feed */
+  height: 300px; /* fixed height for consistency */
   object-fit: cover;
+  border-radius: 10px;
+}
+
+.image-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  touch-action: pan-y; /* allows horizontal swiping */
+}
+
+.nav-btn {
+  background-color: rgba(79, 129, 189, 0.5); /* translucent blue */
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  font-size: 2rem; /* makes the arrow bigger */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  z-index: 2;
+  margin: 0 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1; /* ensures vertical centering */
+  padding: 0; /* remove default padding */
+}
+
+
+.nav-btn:hover {
+  background-color: rgba(107, 167, 220, 0.7);
+  transform: scale(1.1);
+}
+
+.nav-btn.left {
+  margin-right: 20px;
+}
+
+.nav-btn.right {
+  margin-left: 20px;
 }
